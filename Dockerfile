@@ -2,7 +2,7 @@ FROM lsiobase/alpine:3.6
 
 # environment variables
 ENV \
-    PYTHON_EGG_CACHE="/config/plugins/.python-eggs" \
+    PYTHON_EGG_CACHE="/config/deluge/plugins" \
     LIBTORRENT_VERSION=1.1.4 \
     DELUGE_VERSION=1.3.15
 

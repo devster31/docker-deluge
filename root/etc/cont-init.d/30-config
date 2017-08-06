@@ -1,5 +1,12 @@
 #!/usr/bin/with-contenv bash
 
+set -x
+
+[[ ! -s /config/core.conf ]] && \
+    cp /defaults/core.conf /config/core.conf
+[[ ! -s /config/web.conf ]] && \
+    cp /defaults/web.conf /config/web.conf
+
 # permissions
 chown -R abc:abc \
     /config
