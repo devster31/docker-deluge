@@ -75,7 +75,7 @@ RUN \
     pyxdg \
     setproctitle \
     slimit \
-    twisted[tls] && \
+    twisted[tls,http2] && \
 
   cd /tmp && \
   curl -SL -O http://git.deluge-torrent.org/deluge/snapshot/deluge-deluge-${DELUGE_VERSION}.tar.gz && \
